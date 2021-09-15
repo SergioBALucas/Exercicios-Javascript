@@ -8,9 +8,10 @@
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var raio=parseInt(prompt("Digite o valor do raio (m) da lata de óleo:"));
+        var altura=parseInt(prompt("Digite o valor da altura (m) da lata de óleo:"));
+        var area= ((Math.PI)*(raio*raio)*(altura)).toFixed(2);
+        alert("O valor do volume da lata de óleo é de: "+area+'m³');
     </script>
 </body>
 </html>
