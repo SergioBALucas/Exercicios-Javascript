@@ -8,10 +8,10 @@
 </head>
 <body>
     <script>
-        var base=parseInt(prompt("Digite o valor da base do retângulo:"));
-        var altura=parseInt(prompt("Digite o valor da altura do retângulo:"));
-        var area= base*altura;
-        alert("O valor da área deste retângulo é: "+area);
+        var base=parseInt(prompt("Digite o valor da base do retângulo (m):"));
+        var altura=parseInt(prompt("Digite o valor da altura do retângulo (m):"));
+        var area= (base*altura).toFixed(2);
+        alert("O valor da área deste retângulo é: "+area+"m²");
     </script>
 </body>
 </html>
