@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor Celsius para Farenheit</title>
+    <title>Prestação</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var valor=parseInt(prompt("Qual o valor original?"));
+        var taxa=parseInt(prompt("Qual a porcentagem da taxa?"));
+        var tempo=parseInt(prompt("Há quanto tempo há esta prestação?"));
+        var prestacao=(valor+(valor*(taxa/100)*tempo)).toFixed(2);
+        alert('O valor total da prestação é de R$'+prestacao);
     </script>
 </body>
 </html>
