@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário de Vendedor</title>
+</head>
+<body>
+    <script>
+        var fixo=parseInt(prompt("Digite seu salário fixo:"));
+        var comissao=parseInt(prompt("Digite o valor da comissão por carro vendido:"));
+        var vendas=parseInt(prompt("Digite o valor de suas vendas este mês:"));
+        var carros=parseInt(prompt("Quantos carros você vendeu este mês?:"));
+        var salario= (fixo + (carros*comissao) + (vendas*(5/100))).toFixed(2);
+        alert("Seu salário este mês é equivalente a : R$"+salario);
+    </script>
+</body>
+</html>

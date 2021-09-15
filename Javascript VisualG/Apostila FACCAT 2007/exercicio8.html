@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+<body>
+    <script>
+        var brancos=parseInt(prompt("Quantos votos brancos teve?:"));
+        var nulos=parseInt(prompt("Quantos votos nulos teve?:"));
+        var val=parseInt(prompt("Quantos votos válidos teve?:"));
+        var total = brancos+nulos+val;
+        var pbrancos = ((brancos*100)/total).toFixed(2);
+        var pnulos = ((nulos*100)/total).toFixed(2);
+        var pval = ((val*100)/total).toFixed(2);
+        alert("Entre um total de "+total+" votos:\n"+ pbrancos +"%"+" dos votos são brancos\n"+pnulos+"%"+" dos votos são nulos\n"+pval+"%"+" dos votos são válidos\n");
+    </script>
+</body>
+</html>
