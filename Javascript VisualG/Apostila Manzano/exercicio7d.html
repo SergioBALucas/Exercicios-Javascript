@@ -8,9 +8,16 @@
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var tempo=parseInt(prompt("Quanto tempo (Horas) foi gasto?:"));
+        var velocidade=parseInt(prompt("Qual foi a velocidade média (Km/h) da viagem?:"));
+        var distancia=(tempo*velocidade).toFixed(2);
+        var litros=(distancia/12).toFixed(1);
+        alert 
+        ('A velocidade média foi de '+velocidade+"km/h.\n"
+        +"Foram gastas "+tempo+" horas para realizar o percurso.\n"
+        +"A distancia percorrida foi de "+distancia+"km.\n"
+        +"Foram utilizados "+litros+"L durante o percurso."
+        )
     </script>
 </body>
 </html>
