@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor Celsius para Farenheit</title>
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="Manzano,Pagina 25,Javascript">
+    <meta name="description" content="Exercício 7-H da apostila Manzano">
+    <title>Volume de retangulo</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var comprimento=parseInt(prompt("Qual a comprimento do retangulo? (m):"));
+        var largura=parseInt(prompt("Qual a largura do retangulo? (m):"));
+        var altura=parseInt(prompt("Qual a altura do retangulo? (m):"));
+        var volume=(comprimento*largura*altura);
+        alert('O volume do retangulo é de '+volume+'m³');
     </script>
 </body>
 </html>

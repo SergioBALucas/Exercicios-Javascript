@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor Celsius para Farenheit</title>
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="Manzano,Pagina 25,Javascript">
+    <meta name="description" content="Exercício 7-F da apostila Manzano">
+    <title>Troca-troca</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var a=parseInt(prompt("Qual a variável A?: "));
+        var b=parseInt(prompt("Qual a variável B?: "));
+        var c=a*1;
+        var d=b*1;
+        var a=d;
+        var b=c;
+        console.log(a)
+        console.log(b)
+        alert('A variável "A" agora é igual a '+a+' e a variável "B" é igual a '+b);
     </script>
 </body>
 </html>

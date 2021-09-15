@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor Celsius para Farenheit</title>
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="Manzano,Pagina 25,Javascript">
+    <meta name="description" content="Exercício 7-G da apostila Manzano">
+    <title>Soma e Multiplicação de 4 números</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        var numero1=parseInt(prompt("Escreva o primeiro número (A): "));
+        var numero2=parseInt(prompt("Escreva o segundo número (B): "));
+        var numero3=parseInt(prompt("Escreva o terceiro número (C): "));
+        var numero4=parseInt(prompt("Escreva o quarto número (D): "));
+        var som1=numero1+numero2;
+        var som2=numero1+numero3;
+        var som3=numero1+numero4;
+        var som4=numero2+numero3;
+        var som5=numero2+numero4;
+        var som6=numero3+numero4;
+        var pro1=numero1*numero2;
+        var pro2=numero1*numero3;
+        var pro3=numero1*numero4;
+        var pro4=numero2*numero3;
+        var pro5=numero2*numero4;
+        var pro6=numero3*numero4;
+        alert("O resultado das adições foi de \n"
+        +"\nA ("+numero1+")"+"+"+" B ("+numero2+") = "+som1
+        +"\nA ("+numero1+")"+"+"+" B ("+numero3+") = "+som2
+        +"\nA ("+numero1+")"+"+"+" B ("+numero4+") = "+som3
+        +"\nA ("+numero2+")"+"+"+" B ("+numero3+") = "+som4
+        +"\nA ("+numero2+")"+"+"+" B ("+numero4+") = "+som5
+        +"\nA ("+numero3+")"+"+"+" B ("+numero4+") = "+som6);
+        alert("O produto das multiplicações foi de \n"
+        +"\nA ("+numero1+")"+"+"+" B ("+numero2+") = "+som1
+        +"\nA ("+numero1+")"+"+"+" B ("+numero3+") = "+som2
+        +"\nA ("+numero1+")"+"+"+" B ("+numero4+") = "+som3
+        +"\nA ("+numero2+")"+"+"+" B ("+numero3+") = "+som4
+        +"\nA ("+numero2+")"+"+"+" B ("+numero4+") = "+som5
+        +"\nA ("+numero3+")"+"+"+" B ("+numero4+") = "+som6);
     </script>
 </body>
 </html>
