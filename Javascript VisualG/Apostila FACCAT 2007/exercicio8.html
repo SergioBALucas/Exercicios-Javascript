@@ -11,13 +11,14 @@
 </head>
 <body>
     <script>
-        var brancos=parseInt(prompt("Quantos votos brancos teve?:"));
-        var nulos=parseInt(prompt("Quantos votos nulos teve?:"));
-        var val=parseInt(prompt("Quantos votos válidos teve?:"));
-        var total = brancos+nulos+val;
-        var pbrancos = ((brancos*100)/total).toFixed(2);
-        var pnulos = ((nulos*100)/total).toFixed(2);
-        var pval = ((val*100)/total).toFixed(2);
+        //8) Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+        let brancos=parseInt(prompt("Quantos votos brancos teve?:"));
+        let nulos=parseInt(prompt("Quantos votos nulos teve?:"));
+        let val=parseInt(prompt("Quantos votos válidos teve?:"));
+        let total = brancos+nulos+val;
+        let pbrancos = ((brancos*100)/total).toFixed(2);
+        let pnulos = ((nulos*100)/total).toFixed(2);
+        let pval = ((val*100)/total).toFixed(2);
         alert("Entre um total de "+total+" votos:\n"+ pbrancos +"%"+" dos votos são brancos\n"+pnulos+"%"+" dos votos são nulos\n"+pval+"%"+" dos votos são válidos\n");
     </script>
 </body>

@@ -11,10 +11,11 @@
 </head>
 <body>
     <script>
-        var d1=parseInt(prompt("Qual foi a nota obtida na disciplina 1?:"));
-        var d2=parseInt(prompt("Qual foi a nota obtida na disciplina 2?:"));
-        var d3=parseInt(prompt("Qual foi a nota obtida na disciplina 3?:"));
-        var media= (((d1*2)+(d2*3)+(d3*5))/10).toFixed(1);
+        //13) Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média final é: mediafinal = n1 * 2 + n2 * 3 + n3 * 5 / 10
+        let d1=parseFloat(prompt("Qual foi a nota obtida na disciplina 1?:"));
+        let d2=parseFloat(prompt("Qual foi a nota obtida na disciplina 2?:"));
+        let d3=parseFloat(prompt("Qual foi a nota obtida na disciplina 3?:"));
+        let media= (((d1*2)+(d2*3)+(d3*5))/10).toFixed(1);
         alert("O aluno obteve média "+media);
     </script>
 </body>

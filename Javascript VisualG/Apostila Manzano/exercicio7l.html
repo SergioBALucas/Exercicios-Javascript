@@ -7,13 +7,16 @@
     <meta name="author" content="Sergio Brito Amorim Lucas">
     <meta name="keywords" content="Manzano,Pagina 25,Javascript">
     <meta name="description" content="Exercício 7-L da apostila Manzano">
-    <title>Conversor Celsius para Farenheit</title>
+    <title>Soma dos quadrados</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        //7l) Elaborar um programa que efetue a leitura de três valores (A, B e C) e apresente como resultado final à soma dos quadrados dos três valores lidos.
+        let v1=parseInt(prompt("Digite a variável 1"));
+        let v2=parseInt(prompt("Digite a variável 2"));
+        let v3=parseInt(prompt("Digite a variável 3"));
+        let resultado=((v1*v1)+(v2*v2)+(v3*v3));
+        alert('A soma dos quadrados das 3 variáveis é de'+resultado);
     </script>
 </body>
 </html>

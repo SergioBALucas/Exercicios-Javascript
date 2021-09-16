@@ -11,9 +11,10 @@
 </head>
 <body>
     <script>
-        var fixo=parseInt(prompt("Qual o valor do seu salário?:"));
-        var reajuste=parseInt(prompt("Qual o seu percentual de reajuste?:"));
-        var salario= (((reajuste/100)*fixo)+fixo).toFixed(2);
+        //9) Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.
+        let fixo=parseFloat(prompt("Qual o valor do seu salário?:"));
+        let reajuste=parseFloat(prompt("Qual o seu percentual de reajuste?:"));
+        let salario= (((reajuste/100)*fixo)+fixo).toFixed(2);
         alert("Seu salário pós reajuste é de R$"+salario);
     </script>
 </body>

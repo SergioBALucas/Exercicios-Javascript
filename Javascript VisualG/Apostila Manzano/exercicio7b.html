@@ -11,8 +11,9 @@
 </head>
 <body>
     <script>
-        var farenheit=parseInt(prompt("Qual a temperatura em graus Farenheit (ºF)?:"));
-        var celsius=((farenheit-32)*(5/9)).toFixed(1);
+        // 7b) Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é C -> (F - 32) * (5/9) , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+        let farenheit=parseFloat(prompt("Qual a temperatura em graus Farenheit (ºF)?:"));
+        let celsius=((farenheit-32)*(5/9)).toFixed(1);
         alert('A temperatura em graus Celsius é de '+celsius+"ºC");
     </script>
 </body>

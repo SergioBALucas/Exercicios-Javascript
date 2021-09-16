@@ -11,10 +11,11 @@
 </head>
 <body>
     <script>
-        var valor=parseInt(prompt("Qual o valor original?"));
-        var taxa=parseInt(prompt("Qual a porcentagem da taxa?"));
-        var tempo=parseInt(prompt("Há quanto tempo há esta prestação?"));
-        var prestacao=(valor+(valor*(taxa/100)*tempo)).toFixed(2);
+        //7e) Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO -> VALOR + (VALOR * TAXA/100) * TEMPO).
+        let valor=parseFloat(prompt("Qual o valor original?"));
+        let taxa=parseFloat(prompt("Qual a porcentagem da taxa?"));
+        let tempo=parseFloat(prompt("Há quanto tempo há esta prestação?"));
+        let prestacao=(valor+(valor*(taxa/100)*tempo)).toFixed(2);
         alert('O valor total da prestação é de R$'+prestacao);
     </script>
 </body>

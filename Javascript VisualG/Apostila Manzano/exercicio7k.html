@@ -7,13 +7,15 @@
     <meta name="author" content="Sergio Brito Amorim Lucas">
     <meta name="keywords" content="Manzano,Pagina 25,Javascript">
     <meta name="description" content="Exercício 7-K da apostila Manzano">
-    <title>Conversor Celsius para Farenheit</title>
+    <title>Reais para Dólares</title>
 </head>
 <body>
     <script>
-        var celsius=parseInt(prompt("Qual a temperatura em graus celsius (ºC)?:"));
-        var farenheit=((celsius*1.8)+32).toFixed(1);
-        alert('A temperatura em graus Farenheit é de '+farenheit+"ºF");
+        //7k) Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível com o usuário, para que seja apresentado o valor em moeda americana.
+        let reais=parseFloat(prompt("Quantos reais voce tem em sua possessão?: "));
+        let cotacao=parseFloat(prompt("Qual a cotação do dólar?: "));
+        let dolar=(reais/cotacao).toFixed(2);
+        alert('Você tem US$'+dolar);
     </script>
 </body>
 </html>

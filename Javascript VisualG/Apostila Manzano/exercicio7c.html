@@ -11,9 +11,10 @@
 </head>
 <body>
     <script>
-        var raio=parseInt(prompt("Digite o valor do raio (m) da lata de óleo:"));
-        var altura=parseInt(prompt("Digite o valor da altura (m) da lata de óleo:"));
-        var area= ((Math.PI)*(raio*raio)*(altura)).toFixed(2);
+        // 7c) Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: Volume -> p *Raio2 * Altura
+        let raio=parseFloat(prompt("Digite o valor do raio (m) da lata de óleo:"));
+        let altura=parseFloat(prompt("Digite o valor da altura (m) da lata de óleo:"));
+        let area= ((Math.PI)*(raio*raio)*(altura)).toFixed(2);
         alert("O valor do volume da lata de óleo é de: "+area+'m³');
     </script>
 </body>

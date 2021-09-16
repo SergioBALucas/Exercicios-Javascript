@@ -11,11 +11,12 @@
 </head>
 <body>
     <script>
-        var fixo=parseInt(prompt("Digite seu salário fixo:"));
-        var comissao=parseInt(prompt("Digite o valor da comissão por carro vendido:"));
-        var vendas=parseInt(prompt("Digite o valor de suas vendas este mês:"));
-        var carros=parseInt(prompt("Quantos carros você vendeu este mês?:"));
-        var salario= (fixo + (carros*comissao) + (vendas*(5/100))).toFixed(2);
+        //11) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+        let fixo=parseFloat(prompt("Digite seu salário fixo:"));
+        let comissao=parseFloat(prompt("Digite o valor da comissão por carro vendido:"));
+        let vendas=parseFloat(prompt("Digite o valor de suas vendas este mês:"));
+        let carros=parseInt(prompt("Quantos carros você vendeu este mês?:"));
+        let salario= (fixo + (carros*comissao) + (vendas*(5/100))).toFixed(2);
         alert("Seu salário este mês é equivalente a : R$"+salario);
     </script>
 </body>
