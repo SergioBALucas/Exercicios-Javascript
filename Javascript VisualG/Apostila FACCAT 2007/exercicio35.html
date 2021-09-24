@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 6,Javascript">
+    <meta name="description" content="Exercício 26 da Apostila FACCAT 2007">
+    <title>estoque</title>
+</head>
+<body>
+    <script>
+        //26) Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.
+        let tipo=prompt("Qual o tipo de combustível?");
+        let litros=parseFloat(prompt("Quantos litros deseja comprar?"));
+        if (tipo == 'G') {
+            if (litros <= 20) {
+                alert('O preço de '+litros+'L de gasolina é R$'+parseFloat((3.3*litros)-((3.3*litros)*0.04)).toFixed(2))
+            } else {
+                alert('O preço de '+litros+'L de gasolina é R$'+parseFloat((3.3*litros)-((3.3*litros)*0.06)).toFixed(2))
+            }
+        } else if (tipo == 'A') {
+            if (litros <= 20) {
+                alert('O preço de '+litros+'L de álcool é R$'+parseFloat((2.9*litros)-((2.9*litros)*0.03)).toFixed(2))
+            } else {
+                alert('O preço de '+litros+'L de álcool é R$'+parseFloat((2.9*litros)-((2.9*litros)*0.05)).toFixed(2))
+            }
+        }
+    </script>
+</body>
+</html>

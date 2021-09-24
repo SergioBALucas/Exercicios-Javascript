@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 6,Javascript">
+    <meta name="description" content="Exercício 22 da Apostila FACCAT 2007">
+    <title>Hora extra</title>
+</head>
+<body>
+    <script>
+        //22) A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
+        let salh=parseFloat(prompt("Informe seu salário por hora"));
+        let ht=parseFloat(prompt("Informe quantas horas você trabalhou no mês"));
+        if (ht>160) {
+            let mensal = 160*salh
+            let salario = (((ht-160)*((salh*50/100)+salh))+mensal).toFixed(2)
+            alert('Seu salário pós acrescentos das horas extras é de R$'+salario);
+        } else {
+            let salario = (ht*salh).toFixed(2)
+            alert('Seu salário é de R$'+salario);
+        }
+    </script>
+</body>
+</html>

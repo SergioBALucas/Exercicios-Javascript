@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="Manzano,Pagina 26,Javascript">
+    <meta name="description" content="Exercício 3.10.1c da apostila Manzano">
+    <title>Quadrado da soma</title>
+</head>
+<body>
+    <script>
+        //7m) Elaborar um programa que efetue a leitura de três valores (A,B e C) e apresente como resultado final o quadrado da soma dos três valores lidos.
+        let cA=parseInt(prompt('Quantos votos válidos para o candidato A?'));
+        let cB=parseInt(prompt('Quantos votos válidos para o candidato B?'));
+        let cC=parseInt(prompt('Quantos votos válidos para o candidato C?'));
+        let nulos=parseInt(prompt('Quantos votos nulos?'));
+        let brancos=parseInt(prompt('Quantos votos brancos?'));
+        let total = (cA+cB+cC+nulos+brancos);
+        alert('O número total de eleitores foi de '+total
+        +'\nO percentual de votos válidos é de '+parseInt(((cA+cB+cC)*100)/total)+'%'
+        +'\nO percentual de votos válidos ao candidato A é de '+parseInt((cA*100)/total)+'%'
+        +'\nO percentual de votos válidos ao candidato B é de '+parseInt((cB*100)/total)+'%'
+        +'\nO percentual de votos válidos ao candidato C é de '+parseInt((cC*100)/total)+'%'
+        +'\nO percentual de votos nulos é de '+parseInt((nulos*100)/total)+'%'
+        +'\nO percentual de votos brancos é de '+parseInt((brancos*100)/total)+'%'
+        ); 
+    </script>
+</body>
+</html>

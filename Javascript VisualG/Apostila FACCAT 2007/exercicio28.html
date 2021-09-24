@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 6,Javascript">
+    <meta name="description" content="Exercício 26 da Apostila FACCAT 2007">
+    <title>estoque</title>
+</head>
+<body>
+    <script>
+        //26) Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.
+        let v1 = parseFloat(prompt('Escreva um valor: '))
+        let v2 = parseFloat(prompt('Escreva um valor: '))
+        let v3 = parseFloat(prompt('Escreva um valor: '))
+        if (v1>v2 && v2>v3) {
+            alert ('O maior número entre estes é '+v1)
+        } else if (v2>v3 && v3>v1) {
+            alert ('O maior número entre estes é'+v2)
+        } else {
+            alert ('O maior número entre estes é'+v3)
+        }
+    </script>
+</body>
+</html>

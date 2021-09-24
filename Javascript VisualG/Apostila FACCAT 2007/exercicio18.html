@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 5,Javascript">
+    <meta name="description" content="Exercício 18 da Apostila FACCAT 2007">
+    <title>Pode votar ou não</title>
+</head>
+<body>
+    <script>
+        //18) Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).
+        let nasc=parseFloat(prompt("Qual seu ano de nascimento"));
+        let atual=parseFloat(prompt("Qual é o ano atual?"));
+        if ((atual-nasc)>=18) {
+            alert('Você pode votar')
+        } else {
+            alert('Você não pode votar')
+        }
+    </script>
+</body>
+</html>

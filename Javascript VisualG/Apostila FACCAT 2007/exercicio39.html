@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 6,Javascript">
+    <meta name="description" content="Exercício 26 da Apostila FACCAT 2007">
+    <title>estoque</title>
+</head>
+<body>
+    <script>
+        //26) Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.
+        alert('Verificação de condições')
+        alert('Condição 1 : (A e B) ou (A xou B)'
+        +'\nCondição 2 : (A ou B) e (A e C)'
+        +'\nCondição 3: A ou C e B xou A e não B'
+        );
+        const a = true;
+        const b = true;
+        const c = false;
+        let resultado1;
+        let resultado2;
+        let resultado3;
+        alert('Constante A: '+a
+        +'\nConstante B: '+b
+        +'\nConstante C: '+c);
+
+        if ((a && b) || ((a || b) && !(a && b))){
+            let resultado1 = ('Condição 1 satisfeita')
+            alert(resultado1);
+        } else {
+            let resultado1 = ('Condição 1 não satisfeita')
+            alert(resultado1);
+        }
+        if ((a || b ) && (a && c)){
+            let resultado2 = ('Condição 2 satisfeita')
+            alert(resultado2);
+        } else {
+            let resultado2 = ('Condição 2 não satisfeita')
+            alert(resultado2);
+        }
+        if ((a || c) && ((a || b) && !(a && b) && !(b))){
+            let resultado3 = ('Condição 3 satisfeita')
+            alert(resultado3);
+        } else {
+            let resultado3 = ('Condição 3 não satisfeita')
+            alert(resultado3);
+        }
+    </script>
+</body>
+</html>

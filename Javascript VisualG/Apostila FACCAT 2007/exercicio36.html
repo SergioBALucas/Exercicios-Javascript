@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="FACCAT 2007,Pagina 6,Javascript">
+    <meta name="description" content="Exercício 26 da Apostila FACCAT 2007">
+    <title>estoque</title>
+</head>
+<body>
+    <script>
+        //26) Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.
+        let h1=parseInt(prompt("Qual a idade do primeiro homem?"));
+        let h2=parseInt(prompt("Qual a idade do segundo homem?"));
+        let m1=parseInt(prompt("Qual a idade da primeira mulher?"));
+        let m2=parseInt(prompt("Qual a idade da segunda mulher?"));
+        if (h1>h2) {
+            if (m1>m2) {
+                alert('A soma da idade do homem mais velho e da mulher mais nova é de '+parseInt(h1+m2)
+                +'\nA soma da idade do homem mais novo e da mulher mais velha é de '+parseInt(h2+m1)
+                )
+            } else {
+                alert('A soma da idade do homem mais velho e da mulher mais nova é de '+parseInt(h1+m1)
+                +'\nA soma da idade do homem mais novo e da mulher mais velha é de '+parseInt(h2+m2))
+            }
+        } else {
+            if (m1>m2) {
+                alert('A soma da idade do homem mais velho e da mulher mais nova é de '+parseInt(h2+m2)
+                +'\nA soma da idade do homem mais novo e da mulher mais velha é de '+parseInt(h1+m1)
+                )
+            } else {
+                alert('A soma da idade do homem mais velho e da mulher mais nova é de '+parseInt(h2+m1)
+                +'\nA soma da idade do homem mais novo e da mulher mais velha é de '+parseInt(h1+m2))
+            }
+        }
+    </script>
+</body>
+</html>

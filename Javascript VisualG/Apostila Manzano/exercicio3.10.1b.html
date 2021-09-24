@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="keywords" content="Manzano,Pagina 26,Javascript">
+    <meta name="description" content="Exercício 3.10.1b da apostila Manzano">
+    <title>Quadrado da soma</title>
+</head>
+<body>
+    <script>
+        //7m) Elaborar um programa que efetue a leitura de três valores (A,B e C) e apresente como resultado final o quadrado da soma dos três valores lidos.
+        let SM=parseFloat(prompt("Qual o valor do seu salário mensal?:"));
+        let PR=parseFloat(prompt("Qual o seu percentual de reajuste?:"));
+        let NS= (((PR/100)*SM)+SM).toFixed(2);
+        alert("Seu salário pós reajuste é de R$"+NS);
+    </script>
+</body>
+</html>
