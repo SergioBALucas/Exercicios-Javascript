@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Exemplo 3 do Conceito de Data Types do site W3Schools">
+    <meta name="tags" content="W3Schools, Datatype, PROA, Jailson">
+    <style>
+        h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+    
+        p {
+        padding: 5px 50px;}
+    
+        #demo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        padding: 0;}</style>
+    <title>Conceito Exemplo 3</title>
+</head>
+<body>
+    <h2>JavaScript</h2>
+    <p>JavaScript lê as expressões da esquerda para direita, A ordem dos fatores produz diferentes resultados:</p>
+    <p id="demo"></p>
+    <script>
+        let x = 16 + 4 + "Volvo";
+        document.getElementById("demo").innerHTML = x;
+    </script>
+    <p>Neste exemplo, o JavaScript entende 16 e 4 como números, até que ele leia "Volvo", convertendo, assim, toda a expressão como uma string.</p>
+    <p>Acompanhando em um passo a passo, a variável calcula 16+4, retorna o resultado e o armazena. Após isto, o código lê "Volvo" e transforma tudo em string, e como o código já entendeu 16+4 como 20, o resultado se torna "20Volvo".</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Exemplo 1 dos tipos dinâmicos do Javascript do site W3Schools">
+    <meta name="tags" content="W3Schools, Datatype, PROA, Jailson">
+    <style>
+    h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    p {
+    padding: 5px 50px;}
+
+    #demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0;}</style>
+    <title>Dinamicos Exemplo 1</title>
+</head>
+<body>
+    <h2>Tipos de Dados do JavaScript</h2>
+    <p>O JavaScript tem tipos de dados dinâmicos. Isso quer dizer que a mesma variável pode ser utilizada para armazenar diferentes tipos de dados.</p>
+    <p id="demo"></p>
+    <script>
+    let x;         // Agora x não está definido
+    x = 5;         // Agora x é um número
+    x = "John";    // Agora x é uma string
+    document.getElementById("demo").innerHTML = x;
+    </script>    
+</body>
+</html>
