@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Alterar Exibição de Elementos com o JavaScript</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Meu Primeiro JavaScript">
-    <meta name="tags" content="W3Schools, Home, PROA, Jailson">
+    <meta name="description" content="Alterar Exibição de Elementos utilizando o JavaScript">
+    <meta name="tags" content="W3Schools, Introduction, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;}
 
-    #texto {
+    #conteudo {
         display: flex;
         align-items: center;
         justify-content:center;
@@ -23,14 +24,12 @@
         justify-content: center;
         font-weight: bold;
         padding: 0;}</style>
-    <title>Meu Primeiro JavaScript</title>
 </head>
 <body>
-<div id="texto">
-<h2>Meu Primeiro JavaScript</h2>
-<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"
->Clique Aqui para mostrar a Data e o Tempo.</button>
-</div>
-<p id="demo"></p>
+    <div id="conteudo">
+        <h2>O que o JavaScript pode fazer?</h2>
+        <p id="demo">O JavaScript pode ocultar elementos HTML</p>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Clique Aqui!</button>              
+    </div>
 </body>
 </html>
