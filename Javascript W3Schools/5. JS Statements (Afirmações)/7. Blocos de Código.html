@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Blocos de Código</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Demonstração de quando blocos de código são utilizados no JavaScript e o porquê">
+    <meta name="tags" content="W3Schools, Statements, PROA, Jailson">
+    <style>
+    p {
+        padding: 5px 50px;
+        text-align: center;}
+
+    #conteudo {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;}
+    
+    #demo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: crimson;
+        font-weight: bold;
+        padding: 0;}</style>
+</head>
+<body>  
+    <div id="conteudo">
+        <h2>Afirmações do JavaScript</h2>
+        <p>Afirmações do JavaScript podem ser agrupadas em blocos de código, com o propósito de definir afirmações que são executadas simultaneamente.</p>
+        <p>Código em Blocos do JavaScript são escritos entre chaves, Ex: { ... }</p>
+        <p>São comuns de serem encontrados em funções, como esta:</p>
+        <button type="button" onclick="minhaFuncao()">Clique Aqui</button>
+        <div id="demo">
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+        </div>
+        <script>
+            function minhaFuncao() {
+                document.getElementById("demo1").innerHTML = "Estas afirmações";
+                document.getElementById("demo2").innerHTML = "Estão entre chaves";
+            }
+        </script>
+    </div>
+</body>
+</html>

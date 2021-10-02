@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Utilizando 'document.write()'</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Demonstrando a funcionalidade da função 'document.write()' ">
+    <meta name="tags" content="W3Schools, Output, PROA, Jailson">
+    <style>
+    p {
+        padding: 5px 50px;
+        text-align: center;}
+
+    #conteudo {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;}
+    
+    #demo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: crimson;
+        font-weight: bold;
+        padding: 0;}</style>
+</head>
+<body>
+<div id="conteudo">
+    <h2>Minha primeira página Web</h2>
+    <p>Meu primeiro parágrafo</p>
+    <script>
+        document.write('Output do document.write');
+    </script> 
+    <p>Nunca declare 'document.write' após o documento terminar de carregar, pois todo o conteúdo da página sera sobrescrito.</p>   
+    <button type="button" onclick="document.write('O document.write sobrescreveu toda a página.'+' Lembre-se, esta função deve idealmente ser utilizada apenas para testes.')">Exemplo</button>
+    <p>Idealmente, o 'document.write()' deve ser utilizado apenas para testes.</p>
+</div>
+</body>
+</html>

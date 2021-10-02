@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Conteúdo HTML no JavaScript</title>
+    <title>Utilizando 'console.log()'</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Mudança do conteúdo HTML utilizando JavaScript">
-    <meta name="tags" content="W3Schools, Introduction, PROA, Jailson">
+    <meta name="description" content="Demonstrando a funcionalidade da função 'console.log()' ">
+    <meta name="tags" content="W3Schools, Output, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;
@@ -29,9 +29,13 @@
 </head>
 <body>
 <div id="conteudo">
-<h2>O que o JavaScript pode fazer?</h2>
-<p id="demo">O JavaScript consegue alterar conteúdos HTML</p>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Olá JavaScript!"'>Clique Aqui</button>    
+    <h2>Ativar o modo "Debug"</h2>
+    <p>Aperte F12 no seu teclado para ativar o modo Debug,</p>
+    <p>Após isto, selecione "Console" no menu debug,</p>
+    <p>E então, execute a pagina novamente.</p>
+    <script>
+    console.log(5 + 6);
+    </script>    
 </div>
 </body>
 </html>

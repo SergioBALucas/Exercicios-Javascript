@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Espaços Brancos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Demonstração da influência dos espaços brancos e boas práticas em escrita de código JavaScript">
+    <meta name="tags" content="W3Schools, Statements, PROA, Jailson">
+    <style>
+    p {
+        padding: 5px 50px;
+        text-align: center;}
+
+    #conteudo {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;}
+    
+    .demo {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: crimson;
+        font-weight: bold;
+        padding: 0;}</style>
+</head>
+<body>  
+    <div id="conteudo">
+        <h2>Afirmações do JavaScript</h2>
+        <p>O JavaScript ignora múltiplos espaços. Você pode adicionar "espaços brancos" para melhorar a leitura de seu script.</p>
+        <p>Porém, o JavaScript irá exibir ambos os casos.</p>
+        <button type="button" onclick="minhaFuncao1()">Exemplo 1</button>
+        <div class="demo">
+            <p id="caso1"></p>
+            <p id="caso2"></p>
+        </div>
+        <p>Em casos de operadores lógicos, é uma boa prática inserir espaços brancos.</p>
+        <button type="button" onclick="minhaFuncao2()">Exemplo 2</button>
+        <div class="demo">
+            <p id="caso3"></p>
+        </div>
+        <script>
+
+            let caso1 = document.getElementById('caso1');
+            let caso2 = document.getElementById('caso2');
+            let caso3 = document.getElementById('caso3');
+            let x = 5 + 5;
+
+            function minhaFuncao1() {
+                caso1.innerHTML = "Esta variável foi escrita com espaços brancos";
+                caso2.innerHTML="Esta variável foi escrita sem espaços brancos";
+            }
+
+            function minhaFuncao2() {
+                caso3.innerHTML = x;
+            }
+            
+        </script>
+    </div>
+</body>
+</html>

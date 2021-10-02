@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Conteúdo HTML no JavaScript</title>
+    <title>Utilizando 'window.alert()'</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Mudança do conteúdo HTML utilizando JavaScript">
-    <meta name="tags" content="W3Schools, Introduction, PROA, Jailson">
+    <meta name="description" content="Demonstrando a funcionalidade da função 'window.alert()' ">
+    <meta name="tags" content="W3Schools, Output, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;
@@ -29,9 +29,12 @@
 </head>
 <body>
 <div id="conteudo">
-<h2>O que o JavaScript pode fazer?</h2>
-<p id="demo">O JavaScript consegue alterar conteúdos HTML</p>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Olá JavaScript!"'>Clique Aqui</button>    
+    <h2>Minha primeira página Web</h2>
+    <p>Meu primeiro parágrafo</p>
+    <script>
+        window.alert('Este é um alerta.');
+        alert('Você também pode utilizar apenas "alert" para declarar um alerta, já que o JavaScript entende que qualquer variável, propriedade ou método declarado, por padrão, pertence ao objeto window(tela).'+'\n'+'\nIsto quer dizer que utilizar o "window.(...)" é opcional, e você pode utilizar apenas o conteúdo dentro de "(...)"');
+    </script>
 </div>
 </body>
 </html>

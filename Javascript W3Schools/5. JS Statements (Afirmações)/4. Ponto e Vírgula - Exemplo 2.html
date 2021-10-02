@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Conteúdo HTML no JavaScript</title>
+    <title>Ponto e Vírgula</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Mudança do conteúdo HTML utilizando JavaScript">
-    <meta name="tags" content="W3Schools, Introduction, PROA, Jailson">
+    <meta name="description" content="Demonstração da utilização do ponto e vírgula para separar afirmações do JavaScript">
+    <meta name="tags" content="W3Schools, Statements, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;
@@ -27,11 +27,16 @@
         font-weight: bold;
         padding: 0;}</style>
 </head>
-<body>
-<div id="conteudo">
-<h2>O que o JavaScript pode fazer?</h2>
-<p id="demo">O JavaScript consegue alterar conteúdos HTML</p>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Olá JavaScript!"'>Clique Aqui</button>    
-</div>
+<body>  
+    <div id="conteudo">
+        <h2>Afirmações do JavaScript</h2>
+        <p>Multiplas afirmações na mesma linha são permitidas.</p>
+        <p id="demo"></p>
+        <script>
+        let a, b, c;
+        a = 5; b = 6; c = a + b;
+        document.getElementById("demo").innerHTML = c;
+        </script>        
+    </div>
 </body>
 </html>

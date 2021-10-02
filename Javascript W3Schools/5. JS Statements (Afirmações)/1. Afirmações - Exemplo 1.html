@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Tag 'script'</title>
+    <title>Afirmações</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Demonstrar a utilização da tag 'script' quando inserida dentro da tag 'body'">
-    <meta name="tags" content="W3Schools, Where To, PROA, Jailson">
+    <meta name="description" content="Demonstração do que são afirmações e qual sua função no JavaScript">
+    <meta name="tags" content="W3Schools, Statements, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;
@@ -27,15 +27,18 @@
         font-weight: bold;
         padding: 0;}</style>
 </head>
-<body>
+<body>  
     <div id="conteudo">
-        <h2>Demonstração do JavaScript no Body.</h2>
-        <p id="demo">Um parágrafo.</p>
-        <button type="button" onclick="minhaFuncao()">Experimente!</button>
+        <h2>Afirmações do JavaScript</h2>
+        <p>Um <b>programa em JavaScript</b> é uma lista de <b>afirmações</b> a serem executadas por um computador.</p>
+        <p id="demo"></p>
         <script>
-        function minhaFuncao() {
-          document.getElementById("demo").innerHTML = "O parágrafo foi alterado.";
-        }
+            let x, y, z;  // afirmação 1
+            x = 5;        // afirmação 2
+            y = 6;        // afirmação 3
+            z = x + y;    // afirmação 4
+            document.getElementById("demo").innerHTML =
+            "O valor de z é " + z + ".";  
         </script>
     </div>
 </body>

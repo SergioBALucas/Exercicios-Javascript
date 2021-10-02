@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Tag 'script'</title>
+    <title>Linha</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergio Brito Amorim Lucas">
-    <meta name="description" content="Demonstrar a utilização da tag 'script' quando inserida dentro da tag 'body'">
-    <meta name="tags" content="W3Schools, Where To, PROA, Jailson">
+    <meta name="description" content="Demonstração de boas práticas quanto a quebra de linha e o tamanho ideal de uma linha de código no JavaScript">
+    <meta name="tags" content="W3Schools, Statements, PROA, Jailson">
     <style>
     p {
         padding: 5px 50px;
@@ -27,16 +27,18 @@
         font-weight: bold;
         padding: 0;}</style>
 </head>
-<body>
+<body>  
     <div id="conteudo">
-        <h2>Demonstração do JavaScript no Body.</h2>
-        <p id="demo">Um parágrafo.</p>
-        <button type="button" onclick="minhaFuncao()">Experimente!</button>
+        <h2>Afirmações do JavaScript</h2>
+        <p>O melhor lugar para quebrar uma linha de código é após um 
+        operador ou uma vírgula.</p>
+        <p>Para maior facilidade na hora da leitura, programadores tendem a 
+        evitar linhas de código maiores do que 80 caractéres.</p>
+        <p id="demo"></p> 
         <script>
-        function minhaFuncao() {
-          document.getElementById("demo").innerHTML = "O parágrafo foi alterado.";
-        }
-        </script>
+            document.getElementById("demo").innerHTML =
+            "Esta é uma afirmação JavaScript";
+        </script> 
     </div>
 </body>
 </html>
